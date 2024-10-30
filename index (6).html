@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epsom Construction Limited</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #004d99;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background: #006bb3;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background: #004d99;
+            color: #ffd700; /* Gold */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: none; /* Initially hidden */
+        }
+        .hero {
+            background: url('path_to_your_image.jpg') no-repeat center center/cover;
+            height: 400px;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #ffd700; /* Gold */
+        }
+        .hero p {
+            font-size: 1.5em;
+            color: #fff;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .content div {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            background: #e6f2ff;
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .content div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .content h2 {
+            margin-top: 0;
+            color: #004d99;
+        }
+        .projects img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .slide-in {
+            animation: slide-in 0.5s forwards;
+        }
+        @keyframes slide-in {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #004d99;
+            color: #fff;
+        }
+        .contact-info {
+            background: #e6f2ff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .show-content {
+            display: block !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Epsom Construction Limited</h1>
+    </header>
+    <nav>
+        <a href="#home" onclick="showSection('home')">Home</a>
+        <a href="#about" onclick="showSection('about')">About Us</a>
+        <a href="#services" onclick="showSection('services')">Services</a>
+        <a href="#projects" onclick="showSection('projects')">Projects</a>
+        <a href="#contact" onclick="showSection('contact')">Contact</a>
+    </nav>
+    <div class="hero slide-in">
+        <h1>Building the Future</h1>
+        <p>Quality Construction and Engineering Services</p>
+    </div>
+    <div class="container" id="home">
+        <div class="content slide-in">
+            <h2>Welcome to Epsom Construction Limited</h2>
+            <p>At Epsom Construction Limited, we pride ourselves on delivering high-quality construction services tailored to meet the unique needs of our clients. With years of experience in the industry, we have established a reputation for excellence, reliability, and innovation in every project we undertake.</p>
+        </div>
+    </div>
+    <div class="container" id="about">
+        <div class="content slide-in">
+            <h2>About Us</h2>
+            <p>Welcome to Epsom Construction Limited. At Epsom Construction Limited, we pride ourselves on delivering high-quality construction services tailored to meet the unique needs of our clients. With years of experience in the industry, we have established a reputation for excellence, reliability, and innovation in every project we undertake.</p>
+            <h3>Our Mission</h3>
+            <p>Our mission is to provide exceptional construction services that not only meet but exceed our clients' expectations. We are committed to maintaining the highest standards of quality and safety while fostering strong relationships with our clients and partners.</p>
+            <h3>Our Vision</h3>
+            <p>To be the most sought-after and sustainable business in the built environment.</p>
+            <h3>What We Do</h3>
+            <p>Epsom Construction Limited specializes in a wide range of services, including:</p>
+            <ul>
+                <li><strong>Residential Construction</strong>: From new builds to renovations, we transform houses into dream homes.</li>
+                <li><strong>Commercial Construction</strong>: We manage projects of all sizes, delivering functional and stylish commercial spaces.</li>
+                <li><strong>Project Management</strong>: Our expert team ensures that your project runs smoothly from start to finish, on time and within budget.</li>
+                <li><strong>Consultation Services</strong>: We provide expert advice and planning to help you navigate your construction project effectively.</li>
+            </ul>
+            <h3>Why Choose Us?</h3>
+            <p>
+                <strong>Experienced Team</strong>: Our skilled professionals bring a wealth of knowledge and expertise to every project.<br>
+                <strong>Quality Assurance</strong>: We use only the best materials and practices to ensure the highest quality outcomes.<br>
+                <strong>Customer-Centric Approach</strong>: We work closely with our clients, ensuring open communication and collaboration throughout the process.<br>
+                <strong>Sustainability Focus</strong>: We are committed to environmentally responsible construction practices, helping to create sustainable spaces.
+            </p>
+            <h3>Get in Touch</h3>
+            <p>Whether you’re planning a new build or a renovation, Epsom Construction Limited is here to help bring your vision to life. Contact us today for a consultation and let’s build something great together!</p>
+        </div>
+    </div>
+    <div class="container" id="services">
+        <div class="content slide-in">
+            <h2>Our Services</h2>
+            <p>We offer a range of services including residential, commercial, and infrastructure projects.</p>
+        </div>
+    </div>
+    <div class="container" id="projects" class="projects">
+        <div class="content slide-in">
+            <h2>Our Projects</h2>
+            <img src="path_to_your_image.jpg" alt="Project Image">
+            <p>Take a look at some of our completed projects showcasing our expertise and commitment to excellence.</p>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <div class="content slide-in">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:epsomcompany@gmail.com">epsomcompany@gmail.com</a></p>
+            <p>Phone: +254 113 679 902</p>
+            <p>Phone: +254 795 346 400</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Epsom Construction Limited. All rights reserved.</p>
+    </footer>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.container');
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.classList.add('show-content');
+                } else {
+                    section.classList.remove('show-content');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
